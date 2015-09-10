@@ -1,0 +1,3 @@
+NOTES
+let and const are transpiled to _var
+symbols are transpiled to objects 
