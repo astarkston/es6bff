@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
-
 var path = require('path');
+var clean = require('gulp-clean');
 
 var paths = {
     es6: ['src/**/*.js'],
@@ -11,7 +11,12 @@ var paths = {
     sourceRoot: path.join(__dirname, 'es6'),
 };
 
-gulp.task('babel', function () {
+gulp.task('clean', function () {
+	return gulp.src(paths.es5, {read: false})
+		.pipe(clean({force: true}));
+});
+
+gulp.task('babel', ['clean'], function () {
   return gulp.src(paths.es6)
     .pipe(sourcemaps.init())
     .pipe(babel())

@@ -21,13 +21,26 @@ for (var i = 0; i < test.length; i++) {
   testTotal += test[i];
 }
 
-console.log(i);
+console.log("leaked i: " + i);
 
 for (let j = 0; j < test.length; j++) {
   testTotal += test[i]
 }
 
-console.log(j);
+console.log("leaked j: " + j);
+
+const myConstantStr = "jason";
+
+const myConstantObj = {};
+
+myConstantObj.uncle = "joe";
+console.log(myConstantObj.uncle);
+
+const myConstantFreeze = Object.freeze({});
 /*
 let and const are transpiled to _var
+**NOTE: const means the variable always has the same value, aka it's mutable
+use const for things that are completely immutable (exception: mutable objects are okay)
+use let for mutable things
+avoid var
 */

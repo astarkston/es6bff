@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Aaron Starkston",
   "license": "ISC",
   "devDependencies": {
     "gulp": "*",
     "gulp-babel": "*",
+    "gulp-clean": "^0.3.1",
     "gulp-sourcemaps": "*",
     "source-map-support": "*"
   }
