@@ -28,4 +28,5 @@ console.log(set);
 
 /*
 initial size is 0
+maps and sets use size instead of length
 */

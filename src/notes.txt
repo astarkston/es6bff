@@ -1,3 +1,11 @@
 NOTES
 let and const are transpiled to _var
 symbols are transpiled to objects 
+
+-----TO DO------
+--DONE: Let/Var ->Aaron 
+--DONE: Fat Arrow -> Aaron 
+--DONE: Classes -> Aaron 
+--DONE: Modules -> Aaron 
+Maps and Sets - > Aaron 
+Tail Calls -> Aaron
