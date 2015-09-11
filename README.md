@@ -1,5 +1,5 @@
 # es6bff
-# STEPS
-# npm install gulp -g
-# npm install
-# gulp
+STEPS
+1. npm install gulp -g
+2. npm install
+3. gulp

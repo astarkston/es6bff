@@ -4,6 +4,9 @@ var babel = require('gulp-babel');
 var path = require('path');
 var clean = require('gulp-clean');
 
+// .src === our source files to process
+// .pipe === processing these files into different gulp tasks, output directories, etc.
+
 var paths = {
     es6: ['src/**/*.js'],
     es5: 'dist',
